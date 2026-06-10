@@ -1,4 +1,5 @@
-import './App.css'
+
+import ListarProdutos from './ListarProdutos/ListarProdutos'
 import HomeFuncionario from './pages/HomeFuncionario/HomeFuncionario'
  
  
@@ -8,6 +9,7 @@ function App() {
      
       <div>    
       <HomeFuncionario/>
+      <ListarProdutos/>
       </div>
    
     </>

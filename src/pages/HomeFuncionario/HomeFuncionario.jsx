@@ -3,8 +3,10 @@ import MenuFuncionario from "../MenuFuncionario/MenuFuncionario"
 const HomeFuncionario = () => {
  
     return (
-        <div classname="container">
+        <div className="container">
                 <MenuFuncionario/>
+
+                <p>Home Funcionário</p>
         </div>
     )
 }

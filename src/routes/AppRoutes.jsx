@@ -1,10 +1,4 @@
-import {
-    BrowserRouter,
-    Router,
-    Route,
-    Routes
-
-} from "react-router-dom"
+import {BrowserRouter,Routes,Route} from "react-router-dom"
 
 import HomeFuncionario from "../pages/HomeFuncionario/HomeFuncionario"
 import ListarProdutos from "../ListarProdutos/ListarProdutos"
@@ -12,6 +6,7 @@ import ListarProdutos from "../ListarProdutos/ListarProdutos"
 const AppRoutes = () => {
 
     return(
+        <div>
         <BrowserRouter>
             <Routes>
                 <Route
@@ -19,16 +14,22 @@ const AppRoutes = () => {
                     element={<HomeFuncionario/>}
                 
                 />
+
+                <Route
+                path="/pizzaria/funcionario/home"
+                element={<HomeFuncionario/>}
+                />
                 <Route
                     path="/pizzaria/funcionario/produto"
-                    element={<ListarProduto/>}
+                    element={<ListarProdutos/>}
                 
                 />
 
             </Routes>
 
 
-        </BrowserRouter>  
+        </BrowserRouter> 
+        </div>
     )
 }
 
