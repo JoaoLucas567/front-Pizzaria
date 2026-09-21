@@ -1,3 +1,4 @@
+import CredentialUser from "../../componentes/CredentialUser"
 import MenuFuncionario from "../MenuFuncionario/MenuFuncionario"
 import ListarProdutos from "../ListarProdutos/ListarProdutos"
  
@@ -7,6 +8,7 @@ const ListarCategoria = () => {
         <div className="container">
  
             <MenuFuncionario />
+            <CredentialUser title="Listar categoria"/>
  
             <div className="table-responsive">
                 <table className="table table-bordered table-striped table-hover">
